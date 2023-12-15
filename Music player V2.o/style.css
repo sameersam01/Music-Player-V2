@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,400;0,700;1,100;1,300&display=swap");
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  font-family: "Jost", sans-serif;
+}
+
+.main {
+  width: 100vw;
+  height: 100vh;
+  background-color: #f6f6f6;
+  display: grid;
+  place-items: center;
+}
+.music-container {
+  background-color: #ffffff;
+  height: 100%rem;
+  width: 35rem;
+  border-radius: 16px;
+  box-shadow: 0 1.2rem 3rem 0.5rem rgba(0, 0, 0, 0.2);
+  padding: 3rem;
+  text-align: center;
+}
+#title {
+  text-transform: uppercase;
+  font-size: 3rem;
+  letter-spacing: 0.2rem;
+  word-spacing: 0.5rem;
+  color: #171717;
+  margin: 2rem 0 0.5rem 0;
+  font-weight: 500;
+  text-shadow: 0rem 0.3rem 0.5rem rgba(0, 0, 0, 0.3);
+}
+#artist {
+  font-size: 2rem;
+  color: #5c5b5b;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  margin-bottom: 4rem;
+  text-transform: capitalize;
+}
+
+.img-container img {
+  height: 25rem;
+  width: 25rem;
+  border-radius: 50%;
+  margin: auto;
+  object-fit: cover;
+  box-shadow: 0 1.2rem 3rem 0.5rem rgba(0, 0, 0, 0.4);
+}
+
+.music-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 20rem;
+  margin: auto;
+  margin-top: 5rem;
+}
+.music-controls .fas {
+  font-size: 2rem;
+  cursor: pointer;
+  color: #111111;
+  filter: drop-shadow(0 1.2rem 3rem 0.5rem rgba(0, 0, 0, 0.4));
+}
+.music-controls .fas:hover {
+  color: #5c5b5b;
+}
+.music-controls .fa-play:hover {
+  color: #111;
+  background-color: #f6f6f6;
+  box-shadow: 0 1rem 2rem 0.2rem rgba(0, 0, 0, 0.4);
+}
+.music-controls .fa-pause:hover {
+  color: #111;
+  background-color: #f6f6f6;
+  box-shadow: 0 1rem 2rem 0.2rem rgba(0, 0, 0, 0.4);
+}
+.music-controls .main-btn {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  background: #111;
+  color: #f6f6f6;
+  display: flex;
+  font-size: 1.4rem;
+  justify-content: center;
+  align-items: center;
+}
+.anime {
+  animation: rotate 3s linear infinite;
+}
+.git{
+  margin-top: -80px;
+}
+.git a{color: #171717;}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
